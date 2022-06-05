@@ -1,5 +1,12 @@
+// https://youtu.be/iMst9GE8wIM
+
 import { BiDotsHorizontalRounded } from "react-icons/bi"
 import { AiOutlinePlus } from "react-icons/ai"
+import Header from "../components/Header"
+import PortfolioChart from "../components/PortfolioChart"
+import BuyTokens from "../components/BuyTokens"
+import Notice from "../components/Notice"
+import Assests from "../components/Assests"
 // import styles from '../styles/Home.module.css'
 
 const styles = {
@@ -30,11 +37,11 @@ const styles = {
 export default function Home() {
   return (
     <div className={styles.wrapper}>
-      {/* <Header /> */}
+      <Header />
       <div className={styles.mainContainer}>
         <div className={styles.leftMain}>
           <div className={styles.portfolioAmountContainer}>
-            <div className={styles.portfolioAmount}> ETH</div>
+            <div className={styles.portfolioAmount}>23 ETH</div>
             <div className={styles.portfolioPercent}>
               +0.0008(+0.57%)
               <span className={styles.pastHour}>Past Hour</span>
@@ -42,12 +49,12 @@ export default function Home() {
           </div>
           <div>
             <div className={styles.chartContainer}>
-              {/* <PortfolioChart /> */}
+              <PortfolioChart />
             </div>
           </div>
           <div className={styles.buyingPowerContainer}>
             <div className={styles.buyingPowerTitle}>Buying Power</div>
-            <div className={styles.buyingPowerAmount}>ETH</div>
+            <div className={styles.buyingPowerAmount}>12 ETH</div>
           </div>
           <div className={styles.notice}>
             <div className={styles.noticeContainer}>
@@ -55,10 +62,10 @@ export default function Home() {
               <div className={styles.noticeMessage}>
                 Transfer your funds here.
               </div>
-              {/* <BuyTokens /> */}
+              <BuyTokens />
             </div>
           </div>
-          {/* <Notice /> */}
+          <Notice />
         </div>
         <div className={styles.rightMain}>
           <div className={styles.rightMainItem}>
@@ -67,7 +74,7 @@ export default function Home() {
             <BiDotsHorizontalRounded className={styles.moreOptions} />
           </div>
           {/* Map through coins and for every coin omake an assest comp */}
-          {/* <Assest /> */}
+          <Assests />
 
           <div className={styles.rightMainItem}>
             <div className={styles.ItemTitle}>Lists</div>
